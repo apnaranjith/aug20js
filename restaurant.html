@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            overflow-x:hidden;
+        }
+        #sample{
+            background-color:red;
+            display:inline-block;
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--I have used setAttribute() method inorder to apply the styling to span(sp1_cre) tag-->
+
+    <script>
+        var h1_cre=document.createElement("h1");
+        h1_cre.innerHTML="<center>RESTAURANT</center>";
+        h1_cre.style.backgroundImage="linear-gradient(to right,orange,green)";
+        document.body.style.backgroundImage="conic-gradient(from 90deg,black,white,orange,green)";
+        h1_cre.addEventListener("mouseover",()=>{
+            h1_cre.style.fontStyle="italic";
+        })
+        h1_cre.addEventListener("mouseout",()=>{
+            h1_cre.style.fontFamily="Arial";
+
+    })
+    var img1_cre=document.createElement("img");
+    img1_cre.src="https://cdn.pixabay.com/photo/2015/09/14/11/43/restaurant-939435_640.jpg";
+    img1_cre.height="300";
+    img1_cre.width="300";
+    var sp1_cre=document.createElement("span");
+    sp1_cre.innerHTML="<i>Usain's Restaurant</i>";
+    sp1_cre.setAttribute("id","sample");
+    sp1_cre.style.position="relative";
+    sp1_cre.style.bottom="280px";
+    sp1_cre.style.fontSize="50px";
+    var details_cre=document.createElement("details");
+    details_cre.style.position="relative";
+    details_cre.style.left="350px";
+    details_cre.style.bottom="250px";
+    var sum_cre=document.createElement("summary");
+    sum_cre.innerText=" Mixed Menu";
+     var ol_cre=document.createElement("ol");
+     for(i=0;i<4;i++){
+        var li_cre=document.createElement("li");
+        if(i==0){
+            li_cre.innerText="spinach Omelette";
+
+        }
+        if(i==1){
+            li_cre.innerText="Roasted chicken";
+        }
+        if(i==2){
+            li_cre.innerText="Omega Fish";
+        }
+        if(i==3){
+            li_cre.innerText="Beef";
+        }
+        ol_cre.append(li_cre);
+     }
+     details_cre.append(sum_cre,ol_cre);
+     var img2_cre=document.createElement("img");
+     img2_cre.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQLPRcj93UrWrnM7PxRDO7uDih5wbbPmMFow&s";
+     img2_cre.style.height="400";
+     img2_cre.style.width="400";
+     var details2_cre=document.createElement("details");
+    details2_cre.style.position="relative";
+    details2_cre.style.left="350px";
+    details2_cre.style.bottom="180px";
+     var sum2_cre=document.createElement("summary");
+    sum2_cre.innerText=" CLUBBED Menu";
+    
+     var ol2_cre=document.createElement("ol");
+     for(i=0;i<4;i++){
+        var li_cre=document.createElement("li");
+        if(i==0){
+            li_cre.innerText="Egg fried rice";
+
+        }
+        if(i==1){
+            li_cre.innerText=" chicken fried rice";
+        }
+        if(i==2){
+            li_cre.innerText="Fish";
+        }
+        if(i==3){
+            li_cre.innerText="Beef";
+        }
+        ol2_cre.append(li_cre);
+     }
+     details2_cre.append(sum2_cre,ol2_cre);
+     
+
+    document.body.append(h1_cre,img1_cre,sp1_cre,details_cre,img2_cre,details2_cre);
+    
+
+        
+    </script>
+</body>
+</html>

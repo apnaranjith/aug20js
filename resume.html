@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hello,.ran{
+           background-image:linear-gradient(to right,red,yellow);
+        }
+        #yadav:hover{
+            color:red;
+           
+            transform:scale(1.2);
+
+        }
+        .klm{
+            background-image:conic-gradient(red,yellow,green);
+        }
+        #ranjith{
+            background-color:orange;
+            box-shadow: 10px 10px lightblue;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+        var head_cre=document.createElement("h1");
+        head_cre.setAttribute("id","hello");
+        head_cre.innerHTML="<center>Ranjith Yadav</center>";
+        head_cre.style.position="relative";
+        head_cre.style.top="0px";        
+        var Img_cre=document.createElement("img");
+        Img_cre.src="office.png";
+        Img_cre.setAttribute("class","ran");
+        Img_cre.height="150";
+        Img_cre.width="150";
+        Img_cre.style.border="1px solid black";
+        Img_cre.style.position="absolute";
+        Img_cre.style.left="750px";
+        Img_cre.style.top="5px";
+        var hr1_cre=document.createElement("hr");
+        hr1_cre.style.position="relative";
+        hr1_cre.style.top="120px";
+        var h2_cre=document.createElement("h2");
+        h2_cre.innerText="Career Objective:";
+        h2_cre.style.position="relative";
+        h2_cre.style.top="130px";
+        var p1_cre=document.createElement("p");
+        p1_cre.setAttribute("class","klm");
+        p1_cre.innerHTML="Dedicated front-end developer with a strong foundation in modern web technologies and a knack for problem-solving. Aiming to apply my expertise in user interface design and development to deliver high-quality, scalable web applications."
+        p1_cre.style.position="relative";
+        p1_cre.style.top="120px";
+        var hr2_cre=document.createElement("hr");
+        hr2_cre.style.position="relative";
+        hr2_cre.style.top="130px";
+        var div1_cre=document.createElement("div");
+        div1_cre.style.position="relative";
+       // div1_cre.style.border="1px solid black";//
+        div1_cre.style.top="130px";
+       
+      var div2_cre=document.createElement("div");
+      div2_cre.setAttribute("id","yadav");
+      var h3C_cre=document.createElement("h3");
+      h3C_cre.innerText="SKILLS:";
+
+      var ul_cre=document.createElement("ul");
+      var li1_cre=document.createElement("li");
+      li1_cre.innerText="HTML";
+      var li2_cre=document.createElement("li");
+      li2_cre.innerText="CSS";
+      var li3_cre=document.createElement("li");
+      li3_cre.innerText="JavaScript";
+      ul_cre.append(li1_cre,li2_cre,li3_cre);
+      div2_cre.append(h3C_cre,ul_cre);
+      div2_cre.style.display="inline-block";
+      var div3_cre=document.createElement("div");
+      //div3_cre.style.border="1px solid black"//
+      div3_cre.style.display="inline-block";
+      div3_cre.style.position="relative";
+      div3_cre.style.left="400px";
+     // div3_cre.style.height="80px";//
+      //div3_cre.style.width="80px";//
+      var h3C2_cre=document.createElement("h3");
+      h3C2_cre.innerText="HOBBIES:";
+      var ul2_cre=document.createElement("ul");
+      var li21_cre=document.createElement("li");
+      li21_cre.innerText="Reading Books";
+      var li22_cre=document.createElement("li");
+      li22_cre.innerText="playing VolleyBall";
+      var li23_cre=document.createElement("li");
+      li23_cre.innerText="Reading NewsPaper";
+      ul2_cre.append(li21_cre,li22_cre,li23_cre);
+      div3_cre.append(h3C2_cre,ul2_cre);
+      div1_cre.append(div2_cre,div3_cre);
+      var hr3_cre=document.createElement("hr");
+      hr3_cre.style.position="relative";
+      hr3_cre.style.top="120px";
+      var head2_cre=document.createElement("h3");
+      head2_cre.innerText="Disclaimer:";
+      head2_cre.style.position="relative";
+      head2_cre.style.top="100px";
+      var p2_cre=document.createElement("p");
+      p2_cre.innerHTML="The information provided in this resume is accurate to the best of my knowledge and reflects my skills and experiences up to the date of submission."
+       
+      p2_cre.style.position="relative";
+      p2_cre.style.top="90px";
+var hr4_cre=document.createElement("hr");
+hr4_cre.style.position="relative";
+hr4_cre.style.top="100px";
+var span1_cre=document.createElement("span");
+span1_cre.innerHTML="<b><i>Name:</i></b>";
+span1_cre.style.position="relative";
+span1_cre.style.top="100px";
+var span2_cre=document.createElement("span");
+span2_cre.innerHTML="<mark>Ranjith Yadav</mark>";
+span2_cre.style.position="relative";
+span2_cre.style.top="100px";
+var br_cre=document.createElement("br");
+var span3_cre=document.createElement("span");
+span3_cre.innerText="Signature:"
+span3_cre.style.position="relative";
+span3_cre.style.top="100px";
+var ImgSign_cre=document.createElement("img")
+ImgSign_cre.src="cr7sign.jpg";
+ImgSign_cre.style.height="50px";
+ImgSign_cre.style.position="relative";
+ImgSign_cre.style.top="120px";
+ImgSign_cre.style.left="10px";
+
+
+document.body.setAttribute("id","ranjith");
+
+document.body.append(head_cre,Img_cre,hr1_cre,h2_cre,p1_cre,hr2_cre,div1_cre,hr3_cre,head2_cre,p2_cre,hr4_cre,span1_cre,span2_cre,br_cre,span3_cre,ImgSign_cre);
+    </script>
+</body>
+</html>
